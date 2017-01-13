@@ -11,7 +11,7 @@ import App from './src/App'
 StatusBar.setHidden(true);
 
 export default class AnimatedApp extends Component {
-  render() {
+  render() {          
     return (
         <App/>
     );

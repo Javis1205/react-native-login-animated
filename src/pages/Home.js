@@ -62,10 +62,10 @@ export default class Home extends Component {
                 </Animated.View>
                 <Animated.View style={{position: 'relative', left: this.state.groupHeadingPositionLeft}}>
                     <Heading marginTop={89} color="#ffffff" textAlign="center">
-                        {'<React Viet Nam/>'}
+                        {'OFUKURO'}
                     </Heading>
                     <Heading marginTop={16} element="h3" color="#ffffff" textAlign="center">
-                        {'Animated in react'}
+                        {'The restaurant for everybody'}
                     </Heading>
                 </Animated.View>
                 <Animated.View style={{position: 'relative', left: this.state.buttonPositionLeft}}>

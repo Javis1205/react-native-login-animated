@@ -24,9 +24,38 @@ export default class Login extends Component {
     }
 
     handePressSignIn() {
-        Alert.alert('Button pressed', 'User sign in');
+        // đăng nhập
+        this.fetchData();
     }
-
+    // fetchData(){
+    //   var username = this.state.username;
+    //   var password = this.state.password;
+    //   var form = new FormData();
+    //   form.append("identification", username);
+    //   form.append("password", password);
+    //   const config = {
+    //     method: 'POST',
+    //     headers: {
+    //       "cache-control": "no-cache",
+    //       "postman-token": "a293b17c-fc1c-445e-06a8-8fa6361b5712"
+    //     },
+    //     body: form,
+    //   }
+    //   fetch('http://miny.vn/api/token',config)
+    //   .then((response) => response.json())
+    //   .then((responseData) => {
+    //     if (responseData.token) {
+    //       console.log("responseData" + responseData.userId);
+    //       this.setState({ userId : responseData.userId});
+    //       this._onValueChange("@userid",responseData.userId.toString());
+    //       this._onValueChange("@token",responseData.token);
+    //     } else {
+    //       this.setState({ isLoading:false });
+    //       Alert.alert("Error Login")
+    //     }
+    //   })
+    //   .done();
+    // }
     handlePressSignUp() {
         Actions.register();
     }
@@ -63,7 +92,7 @@ export default class Login extends Component {
             <View style={loginStyle.loginContainer}>
                 <Logo/>
                 <Heading marginTop={16} color="#ffffff" textAlign="center">
-                    {'<React Viet Nam/>'}
+                    {'OFUKURO'}
                 </Heading>
                 <View style={loginStyle.formContainer}>
                     <Animated.View style={{position: 'relative', left: this.state.animation.usernamePostionLeft}}>
